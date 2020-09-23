@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Movie Database</title>
+    </head>
+    <body>
+        <!-- title at top -->
+        <div class="container-fluid" id="header">
+            <div class="row">
+                <h1 class="col-12 mt-4">Movie DB API Search</h1>
+            </div>
+           
+            <div class="row">
+                <form action="" method="" class="col-12" id="search-form">
+                    <div class="form-row">
+    
+                        <div class="col-12 mt-4 col-sm-6 col-lg-4">
+                            <label for="search-id" class="sr-only">Search:</label>
+                            <input type="text" name="" class="form-control" id="search-id" placeholder="Search...">
+                        </div>
+    
+                        <!-- <div class="col-12 mt-4 col-sm-4 col-md-3 col-lg-2">
+                            <label for="limit-id" class="sr-only">Number of results:</label>
+                            <select name="" class="form-control" id="limit-id">
+                                <option value="5">5 results</option>
+                                <option value="10">10 results</option>
+                                <option value="25">25 results</option>
+                                <option value="50">50 results</option>
+                                <option value="100">100 results</option>
+                            </select>
+                        </div> -->
+    
+                        <div class="col-12 mt-4 col-sm-auto">
+                            <button type="submit" class="btn btn-primary btn-block">Search</button>
+                        </div>
+    
+                    </div> <!-- .form-row -->
+                </form>
+    
+            </div> <!-- .row -->
+    
+			<div id="num_results" class="col-12 mt-4">
+				Showing <span id="num-results" class="font-weight-bold">0</span> of <span id="max-results" class="font-weight-bold">0</span> result(s).</div>
+            <div id="default_results" class="col-12 mt-4">Showing movies in theaters</div>
+            <div id="error_results">No results found</div>
+
+
+            <div class="container" id="results">
+            
+
+
+            </div>
+            
+        </div>
+        <!-- search box and submit button -->
+        <!-- Showing _ of _ results -->
+        <!-- display poster img, title, release date
+        NOTE: no tables. Mobile: 2col/row; Tablet: 3col/row; Desktop: 4col/row
+        on movie hover: show rating, #voters, synopsis on top of poster image 
+        synopsis: keep to 200 chars w/ "..." at end-->
+        
+        <script src="main.js"></script>
+
+    </body>
+</html>
